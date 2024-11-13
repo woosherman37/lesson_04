@@ -2,17 +2,19 @@
 
 print(f"\nHello! What would you like?\n")
 
-order = input(f"We offer Latte, Americano or Cappuccino? ")
-
-print(f"\n{order}\n")
+order = input(f"We offer latte, americano or cappuccino? ")
 
 
 price_list = {"latte":4, "americano":3, "cappuccino":3.5}
 
-price = price_list[order]
+try:
+	price = price_list[order]
+	print(f"It's £{price} in total.")	
 
+except KeyError as key:
+	print(f"We don't have this item", key)
+	
 
-print(f"It's £{price} in total.")
 
 
 
