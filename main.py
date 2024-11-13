@@ -2,6 +2,12 @@
 
 print(f"\nHello! What would you like?\n")
 
+order = input(f"We offer Latte, Americano or Cappuccino? ")
+
+print(f"\n{order}\n")
+
+
+
 
 
 
